@@ -1,0 +1,15 @@
+# Commit Checklist
+# 1. Is the title short and descriptive (50 characters max)?
+# 2. Does the description explain *what* and *why*?
+# 3. Are references to issues or tasks included?
+# 4. Is there a proper ticket reference (if applicable)?
+
+# Commit Message Format:
+#
+# [Title]: Brief summary of changes
+#
+# [Description]:
+# - What was changed?
+# - Why was it changed?
+#
+# References: Issue #1234, Closes #5678
