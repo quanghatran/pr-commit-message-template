@@ -1,0 +1,24 @@
+name: Add PR Checklist
+
+on:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  add-checklist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if PR description contains checklist
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## Checklist
+            - [ ] Is the code properly formatted?
+            - [ ] Are all new features covered by tests?
+            - [ ] Is there documentation for new functionality?
+            - [ ] Are there any breaking changes?
+            - [ ] Has the code been reviewed by another team member?
+            - [ ] If applicable, has the PR been linked to an issue? (e.g., `Closes #123`)
+            - [ ] Is the PR title descriptive and following the commit message convention?
