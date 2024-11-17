@@ -22,3 +22,4 @@ jobs:
             - [ ] Has the code been reviewed by another team member?
             - [ ] If applicable, has the PR been linked to an issue? (e.g., `Closes #123`)
             - [ ] Is the PR title descriptive and following the commit message convention?
+            - [ ] Test
